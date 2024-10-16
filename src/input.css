@@ -36,7 +36,7 @@
 @layer components {
   /* HEADER */
   .header__nav.open {
-    @apply right-0 z-50 overflow-y-hidden flex justify-start;
+    @apply right-0 z-20 overflow-y-hidden flex justify-start items-start;
   }
   .toggle__menu {
     @apply flex flex-col gap-1 tracking-tight z-50 md:hidden lg:hidden;
@@ -62,13 +62,13 @@
   /* HEADER SPAN ARROW */
 
   .toggle__menu.open span:first-child {
-    @apply origin-bottom-right rotate-[30deg] w-10 translate-y-[0.8rem] transition-all opacity-[100];
+    @apply origin-bottom-right rotate-[35deg] w-10 translate-x-[-0.3rem] translate-y-[1.2rem] transition-all opacity-[100];
   }
   .toggle__menu.open span:nth-child(2) {
     @apply transition-all opacity-0;
   }
   .toggle__menu.open span:last-child {
-    @apply origin-top-right rotate-[-30deg] w-10 translate-y-[-1.4rem] transition-all opacity-[100];
+    @apply origin-top-right rotate-[-35deg] w-10 translate-x-[-0.3rem] translate-y-[-1.2rem] transition-all opacity-[100];
   }
 
   /* BUTTONS */
