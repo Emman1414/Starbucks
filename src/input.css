@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-poppins overflow-x-hidden;
+  }
+  .container {
+    @apply max-w-[1600px] w-full px-4 mx-auto;
+  }
+  h1 {
+    @apply text-[70px];
+  }
+  h2 {
+    @apply text-[33px];
+  }
+  h3 {
+    @apply text-[24px];
+  }
+  h4 {
+    @apply text-[16px];
+  }
+  h5 {
+    @apply text-[12px];
+  }
+  h6 {
+    @apply text-[10px];
+  }
+  p {
+    @apply text-[16px];
+  }
+}
+
+@layer components {
+  /* HEADER */
+  .header__nav.open {
+    @apply right-0 z-50 overflow-y-hidden flex justify-start;
+  }
+  .toggle__menu {
+    @apply flex flex-col gap-1 tracking-tight z-50 md:hidden lg:hidden;
+  }
+  .toggle__menu span {
+    @apply content-[*] bg-black w-10 h-1 rounded-lg duration-700 ease-in-out;
+  }
+  .toggle__menu span:last-child {
+    @apply content-[*] bg-black w-10 h-1 rounded-lg duration-700 ease-in-out;
+  }
+
+  .header__wrapper {
+    @apply lg:grid lg:grid;
+  }
+  .header__nav li {
+    @apply lg:w-[15rem];
+  }
+
+  .header__nav li a {
+    @apply hover:text-primary;
+  }
+
+  /* HEADER SPAN ARROW */
+
+  .toggle__menu.open span:first-child {
+    @apply origin-bottom-right rotate-[30deg] w-10 translate-y-[0.8rem] transition-all opacity-[100];
+  }
+  .toggle__menu.open span:nth-child(2) {
+    @apply transition-all opacity-0;
+  }
+  .toggle__menu.open span:last-child {
+    @apply origin-top-right rotate-[-30deg] w-10 translate-y-[-1.4rem] transition-all opacity-[100];
+  }
+
+  /* BUTTONS */
+  .btn {
+    @apply p-[0.1rem] px-4 bg-transparent border-transparent shadow-[0px_8px_24px__15px_rgba(149,157,165,0.2)];
+  }
+  .btn.bg-accentt {
+    @apply bg-primary border-2 border-accent text-white hover:bg-hover rounded-full;
+  }
+
+  .btn.bg-blackk {
+    @apply bg-black border-2 border-black text-white hover:bg-gray-500 rounded-full;
+  }
+
+  .btn.bg-outline {
+    @apply bg-transparent border border-black text-black hover:bg-gray-500 rounded-full;
+  }
+}
+
+@layer utilities {
+}
