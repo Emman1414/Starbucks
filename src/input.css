@@ -59,7 +59,7 @@
     @apply hover:text-primary;
   }
 
-  /* HEADER SPAN ARROW */
+  /* HEADER SPAN EKIS*/
 
   .toggle__menu.open span:first-child {
     @apply origin-bottom-right rotate-[35deg] w-10 translate-x-[-0.3rem] translate-y-[1.2rem] transition-all opacity-[100];
@@ -71,6 +71,110 @@
     @apply origin-top-right rotate-[-35deg] w-10 translate-x-[-0.3rem] translate-y-[-1.2rem] transition-all opacity-[100];
   }
 
+  /* SETUPS */
+
+  .steps .setups {
+    @apply flex flex-row items-center justify-between gap-2;
+  }
+
+  .setups h2 {
+    @apply text-xl font-semibold;
+  }
+
+  .setups {
+    @apply mb-5;
+  }
+
+  .setups--details a {
+    @apply underline underline-offset-2 text-primary hover:font-semibold hover:no-underline;
+  }
+
+  .setups--image img {
+    @apply max-w-[3rem];
+  }
+
+  /* FAV SELECT */
+
+  /* TAB */
+  .fav__tab li {
+    @apply w-[6.5rem] flex justify-center cursor-pointer;
+  }
+
+  /* CONTENT */
+  .fav__details.active {
+    @apply block lg:block;
+  }
+  .fav__details {
+    @apply hidden lg:hidden lg:max-w-[50rem] lg:mx-auto;
+  }
+  .fav__coffee--text {
+    @apply w-[30rem];
+  }
+
+  /*COLOUR FOR STARS */
+  .fav__tab li i {
+    @apply text-yellow-400;
+  }
+
+  /* EXTRAS PANEL */
+
+  .extras__cards {
+    @apply flex flex-row m-3;
+  }
+  .extras__cards--image img {
+    @apply max-w-[8rem];
+  }
+  .extras__cards--text h2 {
+    @apply text-xl font-semibold pb-2;
+  }
+  .extras__cards--text a {
+    @apply underline underline-offset-2 text-primary hover:no-underline;
+  }
+  .extras__cards--text p {
+    @apply text-sm;
+  }
+
+  /* PAYMENT PAGE */
+
+  .step__price {
+    @apply p-5;
+  }
+
+  .step__price p {
+    @apply text-xl font-semibold;
+  }
+
+  .paymentGo {
+    @apply grid;
+  }
+  .grid .step {
+    @apply flex flex-row justify-between;
+  }
+  .step__grid--text h3 {
+    @apply text-xl font-semibold mb-4;
+  }
+  .step__grid--image img {
+    @apply max-w-[8rem];
+  }
+
+  /* KEEP THE REWARDS COMING */
+
+  .partners {
+    @apply flex flex-row justify-between mb-5;
+  }
+
+  .partners--image img {
+    @apply max-w-[8rem];
+  }
+  .partners--text p{
+    @apply text-xs text-gray-400;
+  }
+
+  .partners--text a {
+    @apply text-primary font-semibold underline-offset-2 hover:no-underline;
+  }
+
+  /* REPEATABLE PATTERNS */
   /* BUTTONS */
   .btn {
     @apply p-[0.1rem] px-4 bg-transparent border-transparent shadow-[0px_8px_24px__15px_rgba(149,157,165,0.2)];
@@ -85,6 +189,17 @@
 
   .btn.bg-outline {
     @apply bg-transparent border border-black text-black hover:bg-gray-500 rounded-full;
+  }
+  .btn.bg-outline2 {
+    @apply bg-transparent border border-white text-white hover:bg-black rounded-full;
+  }
+
+  .btn.bg-favbtn {
+    @apply bg-secondary rounded-sm rounded p-5;
+  }
+
+  .title {
+    @apply text-center mb-5;
   }
 }
 
