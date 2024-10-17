@@ -907,6 +907,7 @@ p{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 0.5rem;
 }
 
 .partners--image img{
@@ -914,20 +915,20 @@ p{
 }
 
 .partners--text p{
-  font-size: 0.75rem;
-  line-height: 1rem;
+  font-size: 13px;
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-.partners--text a{
+.partners p a{
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(0 98 65 / var(--tw-text-opacity));
-  text-underline-offset: 2px;
+  text-decoration-line: underline;
+  text-underline-offset: 4px;
 }
 
-.partners--text a:hover{
+.partners p a:hover{
   text-decoration-line: none;
 }
 
@@ -999,6 +1000,7 @@ p{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
   background-color: transparent;
+  padding: 0.5rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -1168,6 +1170,11 @@ p{
 .bg-accent{
   --tw-bg-opacity: 1;
   background-color: rgb(0 117 74 / var(--tw-bg-opacity));
+}
+
+.bg-faqColour{
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 249 249 / var(--tw-bg-opacity));
 }
 
 .bg-paymentColor{

@@ -160,18 +160,18 @@
   /* KEEP THE REWARDS COMING */
 
   .partners {
-    @apply flex flex-row justify-between mb-5;
+    @apply flex flex-row justify-between mb-5 gap-2;
   }
 
   .partners--image img {
     @apply max-w-[8rem];
   }
   .partners--text p{
-    @apply text-xs text-gray-400;
+    @apply text-[13px] text-gray-400;
   }
 
-  .partners--text a {
-    @apply text-primary font-semibold underline-offset-2 hover:no-underline;
+  .partners p a {
+    @apply text-primary font-semibold underline underline-offset-4 hover:no-underline;
   }
 
   /* REPEATABLE PATTERNS */
@@ -191,7 +191,7 @@
     @apply bg-transparent border border-black text-black hover:bg-gray-500 rounded-full;
   }
   .btn.bg-outline2 {
-    @apply bg-transparent border border-white text-white hover:bg-black rounded-full;
+    @apply bg-transparent border p-2 border-white text-white hover:bg-black rounded-full;
   }
 
   .btn.bg-favbtn {

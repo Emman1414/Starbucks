@@ -10,6 +10,7 @@ module.exports = {
         accent: "#00754A",
         hover: " #158159",
         paymentColor: "#F2F0EB",
+        faqColour: "#F9F9F9",
       },
       fontFamily: {
         poppins: "Poppins",
