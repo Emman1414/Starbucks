@@ -11,6 +11,7 @@ module.exports = {
         hover: " #158159",
         paymentColor: "#F2F0EB",
         faqColour: "#F9F9F9",
+        idk: "#F1F8F5",
       },
       fontFamily: {
         poppins: "Poppins",
@@ -18,6 +19,10 @@ module.exports = {
       backgroundImage: {
         mobile:
           "linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)),  url('../IMG/hero-mobile_2021.jpg')",
+        desktop:
+          "linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)),  url('../IMG/desk.webp')",
+        green:
+          "linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)),  url('../IMG/green.jpg')",
       },
     },
   },
